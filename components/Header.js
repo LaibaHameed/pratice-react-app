@@ -1,7 +1,10 @@
+"use client"
 import React from 'react';
 import Link from 'next/link';
-import tota from './Nav';
+import Nav from './Nav';
+
 const Header = () => {
+  
   return (
     <>
     <nav> 
@@ -12,7 +15,7 @@ const Header = () => {
       <Link id='link' href='/About'> About us</Link>
       <Link id='link' href='/Contact'> Contact us</Link>
       <Link id='link' href='/Account'> login</Link>
-      <tota/>
+      <Nav/>
       </nav>
     </>
   )

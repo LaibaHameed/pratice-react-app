@@ -98,3 +98,8 @@ span{
   margin: 25px;
   font-size: 20px;
 }
+
+h4{
+  cursor: pointer;
+  border: 1px solid snow;
+}

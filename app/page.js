@@ -1,8 +1,11 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import axios from "axios";
+import {myContext} from '@/helper/Context';
 
 const page = () => {
+  const userContext = useContext(myContext);
+  console.log(useContext)
   const [userName, setUserName] = useState("");
   const [user, setuser] = useState("Laiba");
   const [marks, setMarks] = useState(80);
@@ -34,6 +37,7 @@ const page = () => {
           }}
         />
       </form>
+      {/* <div>{userContext}</div> */}
       <h2>my marks were {marks}</h2>
       <button
         onClick={() => {
